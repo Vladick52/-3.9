@@ -1,19 +1,14 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-    int volume = 1200; // объем басика
-    int fillingSpeed = 30; // плюс в минуту 30 литров
-    int devastationSpeed = 10; // минус 10 литров в минуту
-    int a = fillingSpeed - devastationSpeed;
-
-    int countMinutes;
-
-    while (volume>a){
-        countMinutes = volume/a;
-        System.out.println(countMinutes + "минут");
-        break;
-
+    int value = new Scanner(System.in).nextInt();
+    int factorial =1;
+    for(int i = 1; i <= value; i= i + 1){
+        factorial = factorial * i;
+        System.out.println(value +"!" + factorial);
     }
 
     }
